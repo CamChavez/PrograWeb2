@@ -1,0 +1,126 @@
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            padding: 2.5rem;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box; /* Para que el padding no afecte el ancho */
+            font-size: 1rem;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+        }
+
+        .button-group {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        button {
+            flex-grow: 1; /* Hacen que los botones compartan el espacio */
+            padding: 0.85rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        #btnGenerar {
+            background-color: #2ecc71; /* Verde */
+            color: white;
+        }
+
+        #btnGenerar:hover {
+            background-color: #27ae60;
+        }
+
+        /* Estilo para el botón desactivado */
+        #btnGenerar:disabled {
+            background-color: #bdc3c7; /* Gris */
+            cursor: not-allowed;
+        }
+
+        #btnNuevo {
+            background-color: #e8f4fd;
+            color: #3498db;
+            border: 1px solid #3498db;
+        }
+
+        #btnNuevo:hover {
+            background-color: #d6eaf8;
+        }
+
+        #qr-container {
+            text-align: center;
+            margin-top: 2rem;
+            min-height: 200px; /* Espacio para el QR */
+        }
+
+        /* Estilo para la imagen del QR generada */
+        .qr-code-img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+        }
+
+        /* Estilo para el "código" (el texto del QR) */
+        #qr-text-container {
+            background-color: #ecf0f1;
+            border-radius: 8px;
+            padding: 1rem;
+            font-family: "Courier New", Courier, monospace;
+            font-size: 0.9rem;
+            color: #2c3e50;
+            word-wrap: break-word; /* Para que el texto no se salga */
+            border: 1px dashed #bdc3c7;
+        }
